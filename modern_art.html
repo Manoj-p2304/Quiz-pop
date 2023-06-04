@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MODERN-ART QUIZ</title>
+  <link rel="stylesheet" type="text/css" href="../css/modern_art.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>MODERN-ART QUIZ</h1>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button id="next-btn">Next</button>
+    <button id="submit-btn">Submit</button>
+    <div>
+      <a href="index.html" class="exit-btn" id="exit-btn">HOME</a>
+    </div>
+    <div id="score">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            
+          </div>
+        </div>
+      </div>
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+           <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+           </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+</svg>
+
+
+    </div>
+  </div>
+
+  <script src="../js/modernart.js"></script>
+
+  <script>
+
+let number = document.getElementById("number");
+let counter = 0;
+setInterval(() => {
+  if(counter == 65){
+    clearInterval();
+  }else{
+    counter += 1;
+  number.innerHTML = counter + "%";
+  }
+
+}, 30);
+
+  </script>
+</body>
+</html>>
+

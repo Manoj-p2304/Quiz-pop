@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MUSIC QUIZ</title>
+  <link rel="stylesheet" type="text/css" href="../css/music.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>MUSIC QUIZ</h1>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button id="next-btn">NEXT</button>
+    <button id="submit-btn">SUBMIT</button>
+    <div>
+      <a href="index.html" class="exit-btn" id="exit-btn">HOME</a>
+    </div>
+    <div id="score">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            
+          </div>
+        </div>
+      </div>
+
+
+     
+
+
+    </div>
+  </div>
+
+  <script src="../js/music.js"></script>
+
+  <script>
+
+let number = document.getElementById("number");
+let counter = 0;
+setInterval(() => {
+  if(counter == 65){
+    clearInterval();
+  }else{
+    counter += 1;
+  number.innerHTML = counter + "%";
+  }
+
+}, 30);
+
+  </script>
+</body>
+</html>
